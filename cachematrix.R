@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+# Input an invertable matrix. The output will be a list of functions to get
+# and set the inverse of the matrix using the solve() functions.
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
@@ -19,6 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+# This function will search to see if the cached inverse of the matrix has 
+# been calculated. If it has, it will use the cached data. If it hasn't, 
+# cachesolve will solve the inverse of the matrix and return it.
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
